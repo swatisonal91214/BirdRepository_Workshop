@@ -4,6 +4,6 @@ public class Emu extends Bird {
 	
 	Emu(){
 		name = "Emu";
-		color = "brown";
+		color = Color.BROWN;
 	}
 }

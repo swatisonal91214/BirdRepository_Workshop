@@ -1,53 +1,24 @@
 package com.bl.birdsanctuaryclass;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class BirdRepository {
+	//private List<Bird> birdList = new ArrayList<Bird>();
+	private Set<Bird> birdList = new HashSet<Bird>();
+	 
 	
-	private List birdList = new ArrayList(); 
-	
-	List getBirdList() {
+	Set getBirdList() {
 		return birdList;
 	}
 	
-	void addBirds(Duck duck) {
-		birdList.add(duck); 
+	void addBirds(Bird bird) {
+		birdList.add(bird); 
 	}
 	
-	void addBirds(Emu emu) {
-		birdList.add(emu); 
-	}
-	
-	void addBirds(Ostrich ostrich) {
-		birdList.add(ostrich); 
-	}
-	
-	void addBirds(Parrot parrot) {
-		birdList.add(parrot); 
-	}
-	
-	void addBirds(Penguin penguin) {
-		birdList.add(penguin); 
-	}
-	
-	void removeBirds(Emu emu) {
-		birdList.remove(emu);
-	}
-
-	void removeBirds(Duck duck) {
-		birdList.remove(duck); 
-	}
-	
-	void removeBirds(Ostrich ostrich) {
-		birdList.remove(ostrich); 
-	}
-	
-	void removeBirds(Parrot parrot) {
-		birdList.remove(parrot); 
-	}
-	
-	void removeBirds(Penguin penguin) {
-		birdList.remove(penguin); 
+	void removeBirds(Bird bird) {
+		birdList.remove(bird); 
 	}
 }

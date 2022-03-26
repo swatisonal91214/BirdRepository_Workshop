@@ -4,6 +4,6 @@ public class Parrot extends Bird{
 	
 	Parrot(){
 		name = "Parrot";
-		color = "green"; 
+		color = Color.GREEN; 
 	}
 }

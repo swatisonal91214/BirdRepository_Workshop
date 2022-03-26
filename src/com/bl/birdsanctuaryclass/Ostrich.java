@@ -4,7 +4,7 @@ public class Ostrich extends Bird{
 	
 	Ostrich() {
 		name = "Ostrich";
-		color = "brown";
+		color = Color.WHITE;
 	}	
 }
 
