@@ -1,6 +1,7 @@
 package com.bl.birdsanctuaryclass;
 
 import java.util.List;
+import java.util.Scanner;
 import java.util.Set;
 
 public class UserInterface {
@@ -21,5 +22,14 @@ public class UserInterface {
 			for(Bird bird: birds) {
 				bird.fly();
 			}
+		}
+		
+		public int showMainMenu() {
+			System.out.println("Enter your choice!!");
+			System.out.println("1.Add Birds \n  2.Delete Birds \n 3.Update Birds \n 4.Print Birds \n 5.Exit");
+			Scanner sc = new Scanner(System.in);
+			int option = sc.nextInt();
+			return option;
+			
 		}
 }

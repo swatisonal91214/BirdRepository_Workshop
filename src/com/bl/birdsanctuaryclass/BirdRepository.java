@@ -19,6 +19,16 @@ public class BirdRepository {
 	}
 	
 	void removeBirds(Bird bird) {
+		
 		birdList.remove(bird); 
+	}
+	
+	Bird getBird(String birdId) {
+		for (Bird bird : birdList) {
+			if(bird.birdId.equalsIgnoreCase(birdId)) {
+				return bird;
+			}
+		}
+		return null;
 	}
 }
