@@ -25,11 +25,11 @@ public class UserInterface {
 		}
 		
 		public int showMainMenu() {
-			System.out.println("Enter your choice!!");
-			System.out.println("1.Add Birds \n  2.Delete Birds \n 3.Update Birds \n 4.Print Birds \n 5.Exit");
-			Scanner sc = new Scanner(System.in);
-			int option = sc.nextInt();
-			return option;
-			
+			int option = 0;
+				System.out.println("Enter your choice!!");
+				System.out.println("1.Add Birds \n2.Delete Birds\n 3.Update Birds\n 4.Print Birds \n 5.Exit");
+				Scanner sc = new Scanner(System.in);
+				option = sc.nextInt();
+				return option;
 		}
 }

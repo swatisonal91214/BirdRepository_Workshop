@@ -8,8 +8,22 @@ import java.util.Set;
 public class BirdRepository {
 	//private List<Bird> birdList = new ArrayList<Bird>();
 	private Set<Bird> birdList = new HashSet<Bird>();
+	private static BirdRepository instance;
+	
+	
 	 
 	
+	private BirdRepository() {
+		
+	}
+	
+	public static BirdRepository getInstance() {
+		if(instance ==null) {
+			instance = new BirdRepository();
+		}
+			return instance;
+	}
+
 	Set getBirdList() {
 		return birdList;
 	}
